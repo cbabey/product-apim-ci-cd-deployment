@@ -1,37 +1,15 @@
 environments:
-    - name:
+    - name: dev
       configs:
           endpoints:
               production:
-                  url:
+                  url: 'https://a.dev.wso2.com'
               sandbox:
-                  url:
-          security:
-              enabled:
-              type:
-              username:
-              password:
-          deploymentEnvironments:
-              - displayOnDevportal:
-                deploymentEnvironment:
-                deploymentVhost:
-              - displayOnDevportal:
-                deploymentEnvironment:  
-                deploymentVhost:
-          certs:
-              - hostName:
-                alias:
-                path:
-              - hostName:
-                alias:
-                path:
-          mutualSslCerts:
-              - tierName:
-                alias:
-                path:
-              - tierName:
-                alias:
-                path:
-          policies:
-              - 
-              -  
+                  url: 'https://a.dev.sandbox.wso2.com'
+    - name: prod
+      configs:
+          endpoints:
+              production:
+                  url: 'https://prod.wso2.com'
+              sandbox:
+                  url: 'https://prod.sandbox.wso2.com'
